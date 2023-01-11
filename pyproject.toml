@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "pybinds"
+version = "0.1.0"
+description = "Testing rust binds into python"
+authors = ["Tobias Newmiwaka <newmi1988@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pynvim = "^0.4.3"
+maturin = "^0.14.9"
+
+[build-system]
+requires = ["maturin>=0.14,<0.15"]
+build-backend = "maturin"
+
+[project]
+name = "pybinds"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+
+[tool.maturin]
+python-source = "python"
