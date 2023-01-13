@@ -15,7 +15,7 @@ def python_moving_average(v: List[float], window: int) -> List[float]:
         moving average of v
     """
     moving_average = list()
-    for i in range((len(v) - window)):
+    for i in range((len(v) - window + 1)):
         slice = sum(v[i : (i + window)])
         slice_average = slice / window
         moving_average.append(slice_average)
