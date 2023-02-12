@@ -1,6 +1,6 @@
 use pyo3::{prelude::*, types::PyList};
 
-/// Formats the sum of two numbers as string.
+/// Calculates the moving average of a list
 #[pyfunction]
 fn rust_moving_average(v: &PyList, window : usize) -> PyResult<Vec<f32>> {
 
